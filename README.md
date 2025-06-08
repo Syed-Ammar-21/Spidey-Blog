@@ -1,4 +1,4 @@
-# 📝 Blog Web App
+# 📝 Spidey Blog Web App
 
 A full-stack **Blog Web Application** that allows users to create, read, and manage blog posts. Designed with a clean and responsive UI. This project is ideal for showcasing CRUD operations, frontend-backend integration, and basic routing.
 
