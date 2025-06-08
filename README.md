@@ -7,7 +7,7 @@ A full-stack **Blog Web Application** that allows users to create, read, and man
 - 🏠 Home page displaying all blog posts.
 - ➕ Create new blog posts.
 - 📄 View full content of individual posts.
-- 🗑️ Delete posts.
+- 🗑️ Delete or Edit posts.
 - ✨ Animated UI with hover effects and clean styling.
 - 💾 Persistent data storage (via JSON file / database).
 
@@ -23,10 +23,6 @@ A full-stack **Blog Web Application** that allows users to create, read, and man
 
 ![Folder Structure](https://github.com/Syed-Ammar-21/Spidey-Blog/blob/main/2.%20Files%20Dir%20Create.png)
 
-
-
-
-
 ## 🛠️ Tech Stack
 
 **Frontend:**
@@ -39,9 +35,19 @@ A full-stack **Blog Web Application** that allows users to create, read, and man
 - Express.js
 
 **Data Storage:**
-- JSON file (for basic persistence)
+- JSON file (post.json).
 
-## 📁 Folder Structure
+## 📦 Install Backend Dependencies
+
+- **npm install express body-parser** in terminal. First copy the path of the project using **cd.**
+- If you're using ES Modules (as shown by import syntax and fileURLToPath), ensure you have this in your package.json **("type": "module").**
+
+## Run The Project
+
+- Main file is **app.js**, so in terminal enter **nodemon app.js**. It will show that blog is running at local server **http://localhost:3000**
+
+
+
 
 
 
