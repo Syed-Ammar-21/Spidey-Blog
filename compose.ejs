@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Compose</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Compose a New Post</h1>
+    <a href="/" class="btn">Back to Home</a>
+  </header>
+
+  <main>
+    <form action="/compose" method="POST" class="post-form">
+      <input type="text" name="title" placeholder="Post Title" required>
+      <textarea name="content" rows="6" placeholder="Post Content" required></textarea>
+      <button type="submit" class="btn">Publish</button>
+    </form>
+  </main>
+  <%- include("partial/footer.ejs") %>
+</body>
+</html>

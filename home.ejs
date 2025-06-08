@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spidey Blog</title>
+  <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+<body>
+  <header>
+    <h1>Welcome To The Spidey Blog!!</h1>
+    <a href="/compose" class="btn">New Post</a>
+  </header>
+
+  <main>
+    <% if (posts.length === 0) { %>
+      <p class="no-posts">No blog posts yet.</p>
+    <% } else { %>
+      <% posts.forEach(post => { %>
+  <article class="post">
+    <h2><%= post.title %></h2>
+    <p><%= post.content %></p>
+    <a href="/edit/<%= post.id %>" class="btn">Edit</a>
+    <form action="/delete/<%= post.id %>" method="POST" style="display:inline;">
+      <button type="submit" class="btn">Delete</button>
+    </form>
+  </article>
+<% }); %>
+
+    <% } %>
+  </main>
+  <%- include("partial/footer.ejs") %>
+
+</body>
+</html>
